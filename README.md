@@ -1,2 +1,2 @@
 Preveiw of Digital Clock:
-![37007798-e8c7f8f11faad0452b59a03b626124d5](https://user-images.githubusercontent.com/88980866/218255533-bf643133-6cc4-48df-87ef-d4fba7d2874f.png)
+![37180944-684673369d9425fea16a82bd2342331c](https://user-images.githubusercontent.com/88980866/219468889-40a85d06-4829-4f73-a509-a86359dd395b.png)
