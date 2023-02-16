@@ -1,11 +1,20 @@
-function clock() {
-  var hours = document.getElementById("hours");
-  var minutes = document.getElementById("minutes");
-  var seconds = document.getElementById("seconds");
+const hours = document.getElementById("hours");
+const minutes = document.getElementById("minutes");
+const seconds = document.getElementById("seconds");
+const meridian = document.getElementById("ampm");
 
-  var h = ("0" + (new Date().getHours() % 12)).slice(-2);
-  var m = ("0" + new Date().getMinutes()).slice(-2);
-  var s = ("0" + new Date().getSeconds()).slice(-2);
+function clock() {
+  var time = new Date();
+  var h = time.getHours();
+  var m = time.getMinutes();
+  var s = time.getSeconds();
+  meridian.innerHTML = h > 12 ? "PM" : "AM";
+
+  h = h > 12 ? h % 12 : h;
+
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
 
   hours.innerHTML = h;
   minutes.innerHTML = m;

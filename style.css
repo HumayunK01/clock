@@ -9,6 +9,7 @@
 }
 
 body {
+  user-select: none;
   height: 90vh;
   width: 100%;
   display: flex;
@@ -35,6 +36,7 @@ main .title {
   gap: 20px;
   font-size: 10px;
   letter-spacing: 0.3em;
+  align-items: flex-end;
 }
 
 #clock .hours,
@@ -48,6 +50,21 @@ main .title {
   justify-content: center;
   background-color: #00a8e8;
   color: #fff;
+  border-radius: 5px;
+}
+
+.ampm {
+  margin: 20px 0 0 0;
+  width: 100%;
+  height: 80px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbc036;
+  color: #fff;
+  border-radius: 5px;
 }
 
 #clock .seconds {
